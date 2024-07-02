@@ -57,8 +57,8 @@ export default function Intro() {
     // })
 
     return (
-        <div class="home w-100 my-4 pb-4">
-            <div class="home-content">
+        <div class="home w-100 my-4  pb-0">
+            <div class="home-content pb-4 ">
                 <h3 class="hello mb-0 d-md-block d-none">Hello this is</h3>
                 <h1>Radhe Meena</h1>
 
@@ -68,11 +68,10 @@ export default function Intro() {
                 </div>
 
                 <h3 class="mb-0"><span class="text" ref={text} ></span></h3>
-                <p>I'm a Sophomore at Indian Institute of Information and Technology,Vadodara,
-                    Pursuing B.Tech in Computer Science and Engineering.
+                <p>Passionate full-stack web developer adept in HTML, CSS, JavaScript, React, Bootstrap, Express, Node.js, and MongoDB, creating dynamic, responsive websites for seamless user experiences.
                 </p>
                 <div class="home-icons">
-                    <a href="https://x.com/imradhee__?t=66xuEj6WwqiXZ7cvtAVTLQ&s=09"><XIcon className='p-md-0 p-1' /></a>
+                    <a href="https://x.com/imradhee__?t=66xuEj6WwqiXZ7cvtAVTLQ&s=09"><XIcon className=' p-md-0 p-1' /></a>
                     <a href="https://www.linkedin.com/in/kamal-meena-787706289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon className='p-md-0 p-1' /></a>
                     <a href="https://www.reddit.com/u/imradhee__/s/LLfg638cWd"><RedditIcon className='p-md-0 p-1' /></a>
                     <a href="https://github.com/kamalmeena20"><GitHubIcon className='p-md-0 p-1' /></a>
@@ -85,7 +84,7 @@ export default function Intro() {
                     <Link className={'link-style'} to={'https://github.com/kamalmeena20'}><GitHubIcon sx={{ fontSize: 18 }} /></Link>
                     <Link className={'link-style'} to={'https://www.instagram.com/imradhee_?igsh=MXV4aGI1emUzanQ0ZQ=='}><InstagramIcon sx={{ fontSize: 18 }} /></Link>
                 </div> */}
-                <a href="#about" class="button-box1">More About Me</a>
+                <a href="#about" class="button-box1 mb-0">Resume</a>
             </div>
             <div class="side-img">
                 <img src={radhe}></img>

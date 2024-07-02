@@ -36,7 +36,7 @@ export default function Projects() {
     const [index, setindex] = useState(0)
     return (
         <div className='propage container-fluid  p-0 mt-5 pt-lg-5 pt-md-5 pt-3 pb-lg-3 pb-5'>
-            <div className='sub-title'><h1>My <span >Projects</span> </h1></div>
+            <div className='sub-title m-0 mt-1  '><h1 className='m-0'>My <span >Projects</span> </h1></div>
 
             {/* <h1 class="sub-title">My <span>Services</span></h1> */}
             <div className="row d-lg-flex d-none prow p-0 justify-content-around  position-relative " id='projects'>
@@ -47,21 +47,19 @@ export default function Projects() {
 
 
             </div>
-            <div className="row prow  m-0 p-0 d-lg-none d-flex justify-content-around align-items-center position-relative " id='projects'>
+            <div className="row crow   p-0 d-lg-none d-flex justify-content-sm-around justify-content-center  align-items-center position-relative flex-sm-row flex-column-reverse" id='projects'>
+                <div className="col-sm-2 col-12 d-lg-none mb-0 gap-4 mt-sm-0 mt-4 p-0 d-flex flex-sm-column flex-wrap flex-row align-items-center justify-content-sm-between justify-content-around ">
+                    <img src={image1} className='m-0' alt="" onClick={() => setindex(0)} />
 
-                <div className="col-2 d-lg-none gap-4 m-0 p-0 d-flex flex-column align-items-center justify-content-between">
-                    <img src={image1} className='w-100' alt="" onClick={() => setindex(0)} />
+                    <img src={image2} className='m-0' alt="" onClick={() => setindex(1)} />
 
-                    <img src={image2} className='w-100' alt="" onClick={() => setindex(1)} />
-
-                    <img src={image3} className='w-100' alt="" onClick={() => setindex(2)} />
+                    <img src={image3} className='m-0' alt="" onClick={() => setindex(2)} />
                 </div>
                 <Carousel name={data[index].name} description={data[index].description} images={data[index].images} pending={data[index].pending} link={data[index].link} />
 
 
 
             </div>
-
 
         </div>
     )
