@@ -55,7 +55,7 @@ export default function Contact() {
                 <h4>Let's work Together</h4>
 
                 <div class="contact-list p-0 m-3">
-                    <li className='li-li'><EmailIcon sx={{ fontSize: 20, color: "#0ef" }} /> radhemee2005@gmail.com</li>
+                    <li className='li-li'><EmailIcon sx={{ fontSize: 20, color: "#0ef" }} /> hanshkamalmeena2005@gmail.com</li>
                     <li className='li-li'><PhoneIcon sx={{ fontSize: 20, color: "#0ef" }} />+91 9680477712</li>
                 </div>
 
