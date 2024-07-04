@@ -21,7 +21,7 @@ export default function Contact() {
             return
         }
 
-        const response = await fetch("http://localhost:8080/message", {
+        const response = await fetch("https://portfoliobackend-r36w.onrender.com/message", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
