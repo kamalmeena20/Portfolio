@@ -64,7 +64,7 @@ export default function Intro() {
                     <Link className={'link-style'} to={'https://github.com/kamalmeena20'}><GitHubIcon sx={{ fontSize: 18 }} /></Link>
                     <Link className={'link-style'} to={'https://www.instagram.com/imradhee_?igsh=MXV4aGI1emUzanQ0ZQ=='}><InstagramIcon sx={{ fontSize: 18 }} /></Link>
                 </div> */}
-                <a href="#about" class="button-box1 mb-0" data-aos="slide-right">Resume</a>
+                <a href="#about" class="button-box1 mb-0"   >Resume</a>
             </div>
             <div class="side-img" data-aos="slide-left">
                 <img src={radhe} ></img>
