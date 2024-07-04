@@ -29,7 +29,7 @@ export default function Contact() {
             body: JSON.stringify(data)
         })
 
-        const json = response.json();
+        const json = await response.json();
         if (!json.success) {
             alert("something went wrong try again")
         } else {
