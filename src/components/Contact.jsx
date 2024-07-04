@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -7,6 +7,9 @@ import XIcon from '@mui/icons-material/X';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from 'react-router-dom';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Contact() {
     const [data, setdata] = useState({ name: "", email: "", mobile: "", message: "" })
@@ -41,8 +44,11 @@ export default function Contact() {
             return { ...pdata, [name]: value }
         })
     }
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
-        <div class="contact p-0" id="contact">
+        <div class="contact p-0" id="contact" data-aos="slide-left">
             <div class="contact-text p-0">
                 <h2 >Contact<span className='d-inline'> Me</span></h2>
 

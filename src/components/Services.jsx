@@ -1,41 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import CodeIcon from '@mui/icons-material/Code';
 import CropIcon from '@mui/icons-material/Crop';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import { red } from '@mui/material/colors';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function Services() {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
-        <div class="services mt-3">
+        <div class="services mt-3" data-aos="flip-up">
             <div class="services s2" id="services">
 
-                <h1 class="sub-title my-md-5 my-0">My <span>Services</span></h1>
+                <h1 class="sub-title my-md-5 my-0" data-aos="slide-right">My <span>Services</span></h1>
 
                 <div class="services-list">
                     <div>
-                        <CodeIcon className='service-box-icon' sx={{ fontSize: 45, color: "#0ef" }} />
-                        <h4>Web Design</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nemo vel aspernatur
-                            quaerat
-                            laboriosam incidunt animi amet maxime dolore nobis?
+                        <CodeIcon className='service-box-icon' sx={{ fontSize: 45, color: "#0ef", }} />
+                        <h2>Web Design</h2>
+                        <p>Design stunning, responsive web interfaces with Figma, transforming concepts into visually captivating digital experiences.
                         </p>
                         <a href="#" class="read">Learn more</a>
                     </div>
                     <div>
                         <CropIcon className='service-box-icon' sx={{ fontSize: 40, color: "#0ef" }} />
                         <h2>Web Development</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nemo vel aspernatur
-                            quaerat
-                            laboriosam incidunt animi amet maxime dolore nobis?</p>
+                        <p>Develop robust, scalable web applications using Bootstrap, ReactJS, NodeJS, ExpressJS, and MongoDB, ensuring seamless integration and high performance.</p>
                         <a href="#" class="read">Learn more</a>
                     </div>
                     <div>
                         <AutoFixHighIcon className='service-box-icon' sx={{ fontSize: 40, color: "#0ef" }} />
                         <h2>UI/UX </h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nemo vel aspernatur
-                            quaerat
-                            laboriosam incidunt animi amet maxime dolore nobis?</p>
+                        <p>Enhance user experiences with cutting-edge UI/UX principles, optimizing interfaces for maximum usability and accessibility through innovative design strategies.</p>
                         <a href="#" class="read">Learn more</a>
                     </div>
                 </div>

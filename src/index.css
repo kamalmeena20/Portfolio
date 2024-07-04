@@ -511,6 +511,26 @@ section.services {
   /* margin-bottom: 0; */
 }
 
+
+.launchicon {
+  margin-left: 45%;
+  font-size: 5px !important;
+  background: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.innerone {
+  img {
+    min-height: 220px;
+  }
+}
+
 .services-list p {
   font-size: 18px;
   font-weight: 200;
@@ -956,6 +976,17 @@ form textarea {
 .read:hover {
   box-shadow: 0 0 20px #0ef;
 }
+
+.last-text p {
+  letter-spacing: 2px;
+  max-width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 300;
+  background: rgb(7, 85, 91);
+  margin-top: 70px;
+}
+
 
 @keyframes slideTop {
   0% {

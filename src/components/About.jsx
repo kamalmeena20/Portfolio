@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function About() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+  
   return (
-    <div class="about mt-sm-5 mt-0 p-0 " id="about">
+    <div class="about mt-sm-5 mt-0 p-0 " id="about" data-aos="fade-left">
       <div class="about-text m-0">
-        <h2 className=''>About <span>Me</span></h2>
+        <h2 className='' data-aos="slide-right">About <span>Me</span></h2>
         <p className='w-100 m-0 mx-auto ms-2'>
           "I am a seasoned full-stack web developer with a mastery of HTML, CSS, JavaScript, Bootstrap, ReactJS, ExpressJS, NodeJS, and MongoDB.
           Specializing in crafting bespoke, responsive websites, I combine technical expertise with a creative flair to deliver cutting-edge digital solutions.

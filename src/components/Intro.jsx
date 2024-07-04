@@ -7,13 +7,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import RedditIcon from '@mui/icons-material/Reddit';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Typed from "typed.js"
 import { yellow } from '@mui/material/colors';
 
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Intro() {
 
@@ -33,44 +32,25 @@ export default function Intro() {
         };
     }, [text])
 
-
-    // useEffect(() => {
-    //     gsap.fromTo('.intro',
-    //         {
-    //             y: 300,
-    //             opacity: 0,
-    //         },
-    //         {
-    //             scrollTrigger: {
-    //                 trigger: ".skillpage",
-    //                 toggleActions: "play none none none",
-    //                 scroller: "body",
-    //                 start: "top 120%",
-    //                 // end: "bottom 60%",
-    //                 // markers: true
-
-    //             },
-    //             y: "0",
-    //             opacity: 1,
-    //             duration: 1,
-    //         })
-    // })
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
 
     return (
-        <div class="home w-100 my-4  pb-0">
+        <div class="home w-100 my-4  pb-0 " data-aos="flip-down" >
             <div class="home-content pb-4 ">
-                <h3 class="hello mb-0 d-md-block d-none">Hello this is</h3>
+                <h3 class="hello mb-0 d-md-block d-none" data-aos="slide-top">Hello this is</h3>
                 <h1>Radhe Meena</h1>
 
-                <div class="content">
+                <div class="content" data-aos="slide-right" >
                     <h2>Radhe Meena</h2>
-                    <h2 className='content-h2'>Radhe Meena</h2>
+                    <h2 className='content-h2' >Radhe Meena</h2>
                 </div>
 
                 <h3 class="mb-0"><span class="text" ref={text} ></span></h3>
-                <p>Passionate full-stack web developer adept in HTML, CSS, JavaScript, React, Bootstrap, Express, Node.js, and MongoDB, creating dynamic, responsive websites for seamless user experiences.
+                <p class='' data-aos="slide-bottom">Passionate full-stack web developer adept in HTML, CSS, JavaScript, React, Bootstrap, Express, Node.js, and MongoDB, creating dynamic, responsive websites for seamless user experiences.
                 </p>
-                <div class="home-icons">
+                <div class="home-icons" data-aos="fade-down-left">
                     <a href="https://x.com/imradhee__?t=66xuEj6WwqiXZ7cvtAVTLQ&s=09"><XIcon className=' p-md-0 p-1' /></a>
                     <a href="https://www.linkedin.com/in/kamal-meena-787706289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon className='p-md-0 p-1' /></a>
                     <a href="https://www.reddit.com/u/imradhee__/s/LLfg638cWd"><RedditIcon className='p-md-0 p-1' /></a>
@@ -84,10 +64,10 @@ export default function Intro() {
                     <Link className={'link-style'} to={'https://github.com/kamalmeena20'}><GitHubIcon sx={{ fontSize: 18 }} /></Link>
                     <Link className={'link-style'} to={'https://www.instagram.com/imradhee_?igsh=MXV4aGI1emUzanQ0ZQ=='}><InstagramIcon sx={{ fontSize: 18 }} /></Link>
                 </div> */}
-                <a href="#about" class="button-box1 mb-0">Resume</a>
+                <a href="#about" class="button-box1 mb-0" data-aos="slide-right">Resume</a>
             </div>
-            <div class="side-img">
-                <img src={radhe}></img>
+            <div class="side-img" data-aos="slide-left">
+                <img src={radhe} ></img>
             </div>
 
         </div >

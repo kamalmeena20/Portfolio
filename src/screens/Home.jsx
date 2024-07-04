@@ -8,6 +8,7 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 import Skills from '../components/Skills';
 import Projects2 from '../components/Projects2';
+import End from '../components/End';
 
 export default function Home() {
     const [loading, setloading] = useState(false)
@@ -28,9 +29,9 @@ export default function Home() {
                 <About />
                 <Services />
                 <Skills />
-                {/* <Projects /> */}
                 <Projects2 />
                 <Contact />
+                <End />
                 {/* <img src={backimage} className='position-absolute top-0 w-100 bg-image' /> */}
             </div>
 

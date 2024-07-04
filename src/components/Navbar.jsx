@@ -16,9 +16,9 @@ export default function Navbar() {
 
     return (
         <div>
-            <header class="header py-2 position-relative">
-                <a href="#" class="logo">Radhee</a>
-                <nav class="navbar">
+            <header class="header py-2 position-relative" >
+                <a href="#" class="logo" data-aos="slide-right">Radhee</a>
+                <nav class="navbar" data-aos="slide-left">
                     <a href="#home" class="active">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
