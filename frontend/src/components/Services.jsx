@@ -24,19 +24,19 @@ export default function Services() {
                         <h2>Web Design</h2>
                         <p>Design stunning, responsive web interfaces with Figma, transforming concepts into visually captivating digital experiences.
                         </p>
-                        <a href="#" class="read">Learn more</a>
+                        <a href="#" class="read d-none " >Learn more</a>
                     </div>
                     <div>
                         <CropIcon className='service-box-icon' sx={{ fontSize: 40, color: "#0ef" }} />
                         <h2>Web Development</h2>
                         <p>Develop robust, scalable web applications using Bootstrap, ReactJS, NodeJS, ExpressJS, and MongoDB, ensuring seamless integration and high performance.</p>
-                        <a href="#" class="read">Learn more</a>
+                        <a href="#" class="read d-none">Learn more</a>
                     </div>
                     <div>
                         <AutoFixHighIcon className='service-box-icon' sx={{ fontSize: 40, color: "#0ef" }} />
                         <h2>UI/UX </h2>
                         <p>Enhance user experiences with cutting-edge UI/UX principles, optimizing interfaces for maximum usability and accessibility through innovative design strategies.</p>
-                        <a href="#" class="read">Learn more</a>
+                        <a href="#" class="read d-none">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -47,27 +47,23 @@ export default function Services() {
                         <div class="carousel-item active">
                             <div class="service-div p-4">
                                 <h2>Web Design</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nemo vel aspernatur
-                                    quaerat
-                                    laboriosam incidunt animi amet maxime dolore nobis?
+                                <p>Design stunning, responsive web interfaces with Figma, transforming concepts into visually captivating digital experiences.
                                 </p>
-                                <a href="#" class="read">Learn more</a>
+                                <a href="#" class="read d-none">Learn more</a>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="service-div p-4">
                                 <h2>Web Development</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nemo vel aspernat
-                                    quaerat laboriosam incidunt animi amet maxime dolore nobis?</p>
-                                <a href="#" class="read">Learn more</a>
+                                <p>Develop robust, scalable web applications using Bootstrap, ReactJS, NodeJS, ExpressJS, and MongoDB, ensuring seamless integration and high performance.</p>
+                                <a href="#" class="read d-none">Learn more</a>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="service-div p-4">
                                 <h2>UI/UX </h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nemo vel asperna quaerat
-                                    laboriosam incidunt animi amet maxime dolore nobis?</p>
-                                <a href="#" class="read">Learn more</a>
+                                <p>Enhance user experiences with cutting-edge UI/UX principles, optimizing interfaces for maximum usability and accessibility through innovative design strategies.</p>
+                                <a href="#" class="read d-none">Learn more</a>
                             </div>
                         </div>
                     </div>

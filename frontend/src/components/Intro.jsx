@@ -7,10 +7,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import RedditIcon from '@mui/icons-material/Reddit';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
-// import { Link } from 'react-router-dom';
+import resume from '../data/resume.pdf';
 import Typed from "typed.js"
 import { yellow } from '@mui/material/colors';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -64,7 +63,7 @@ export default function Intro() {
                     <Link className={'link-style'} to={'https://github.com/kamalmeena20'}><GitHubIcon sx={{ fontSize: 18 }} /></Link>
                     <Link className={'link-style'} to={'https://www.instagram.com/imradhee_?igsh=MXV4aGI1emUzanQ0ZQ=='}><InstagramIcon sx={{ fontSize: 18 }} /></Link>
                 </div> */}
-                <a href="#about" class="button-box1 mb-0"   >Resume</a>
+                <a href="#" onClick={() => window.open(resume)} class="button-box1 mb-0"   >Resume</a>
             </div>
             <div class="side-img" data-aos="slide-left">
                 <img src={radhe} ></img>
