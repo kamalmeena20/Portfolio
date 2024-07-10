@@ -8,6 +8,8 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 import Skills from '../components/Skills';
 import Projects2 from '../components/Projects2';
+import Project01 from '../components/Project01';
+import Project02 from '../components/Project02';
 import End from '../components/End';
 
 export default function Home() {
@@ -30,6 +32,8 @@ export default function Home() {
                 <Services />
                 <Skills />
                 <Projects2 />
+                <Project01 />
+                <Project02 />
                 <Contact />
                 <End />
                 {/* <img src={backimage} className='position-absolute top-0 w-100 bg-image' /> */}

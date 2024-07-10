@@ -1002,6 +1002,96 @@ form textarea {
   }
 }
 
+.sliders {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
+  top: 0;
+  transition: 1s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px #0ef;
+  /* background: linear-gradient(to bottom, rgb(101, 101, 101), black); */
+
+
+  h1 {
+    color: #0ef;
+  }
+
+  button {
+    float: right;
+    background-color: rgb(0, 0, 0);
+    color: #0ef;
+    box-shadow: 2px 2px 5px 3px solid white;
+  }
+
+  ul li {
+    list-style: none;
+    display: inline;
+    /* gap: 20px; */
+  }
+}
+
+.contact2 {
+  transition: 1s;
+}
+
+.hidebuttons {
+  animation: rotatex;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.showbuttons {
+  animation: rotatenx;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  z-index: 3;
+  opacity: 1;
+}
+
+.slidehide {
+  animation: rotatex;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.slideshow {
+  animation: rotatenx;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  opacity: 1;
+  z-index: 3;
+}
+
+@keyframes rotatex {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+
+@keyframes rotatenx {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
 /*____________Media Queries-_____________*/
 
 

@@ -42,7 +42,7 @@ const data = [
     }
 ]
 
-export default function Projects() {
+export default function Project01() {
 
     const [index, setindex] = useState(0)
 
@@ -51,7 +51,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className='propage container-fluid  p-0 mt-5 pt-lg-5 pt-md-5 pt-3 pb-lg-3 pb-5' data-aos="slide-right">
+        <div className='propage container-fluid  p-0 mt-5 pt-lg-5 pt-md-5 pt-3 pb-lg-3 pb-5' data-aos="slide-left">
             <div className='sub-title m-0 mt-1  '><h1 className='m-0'>My <span >Projects</span> </h1></div>
 
             {/* <h1 class="sub-title">My <span>Services</span></h1> */}

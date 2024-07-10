@@ -42,7 +42,7 @@ const data = [
     }
 ]
 
-export default function Projects() {
+export default function Project02() {
 
     const [index, setindex] = useState(0)
 

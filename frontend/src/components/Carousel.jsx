@@ -35,7 +35,7 @@ export default function Pbox({ name, description, images, pending, link }) {
                     <div className={classname} onMouseEnter={() => handlehover()} onMouseLeave={() => handleout()}>
                         <h3 className='text-center mt-3 p-0'>{name} <span className={pending ? "d-inline fs-4" : "d-none"}>(progress)</span> </h3>
                         <p className='text-center mt-2 px-2'>{description}</p>
-                        <a href="#"><LaunchIcon class="launchicon" /></a>
+                        <a href={link}><LaunchIcon class="launchicon" /></a>
                     </div>
 
                 </div >
