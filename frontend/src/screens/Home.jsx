@@ -61,7 +61,7 @@ export default function Home() {
                     </path>
 
                 </svg>
-                <h5 className='text-center text-white opacity-50 position-relative hr-lines'>Welcome Viewers </h5>
+                <h5 className='text-center text-white opacity-50 position-relative hr-lines' style={{ top: "-20px" }}>Welcome Viewers </h5>
             </div >
         </>
     )
