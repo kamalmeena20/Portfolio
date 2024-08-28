@@ -11,8 +11,8 @@ import resume from '../data/resume.pdf';
 import Typed from "typed.js"
 import { yellow } from '@mui/material/colors';
 
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Intro() {
 
@@ -32,19 +32,19 @@ export default function Intro() {
         };
     }, [text])
 
-    // useEffect(() => {
-    //     AOS.init({ duration: 2000 });
-    // }, []);
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
 
     return (
         <div class="home w-100 my-4  pb-0 " data-aos="flip-down" >
             <div class="home-content pb-4 ">
                 <h3 class="hello mb-0 d-md-block d-none" data-aos="slide-top">Hello this is</h3>
-                <h1>Radhe Meena</h1>
+                <h1>Kamal Meena</h1>
 
                 <div class="content" data-aos="slide-right" >
-                    <h2>Radhe Meena</h2>
-                    <h2 className='content-h2' >Radhe Meena</h2>
+                    <h2>Kamal Meena</h2>
+                    <h2 className='content-h2' >Kamal Meena</h2>
                 </div>
 
                 <h3 class="mb-0"><span class="text" ref={text} ></span></h3>
