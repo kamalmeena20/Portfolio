@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function About() {
 
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 2000 });
+  // }, []);
   
   return (
     <div class="about mt-sm-5 mt-0 p-0 " id="about" data-aos="fade-left">

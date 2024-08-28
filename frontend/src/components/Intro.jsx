@@ -10,8 +10,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import resume from '../data/resume.pdf';
 import Typed from "typed.js"
 import { yellow } from '@mui/material/colors';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function Intro() {
 
@@ -31,9 +32,9 @@ export default function Intro() {
         };
     }, [text])
 
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    }, []);
+    // useEffect(() => {
+    //     AOS.init({ duration: 2000 });
+    // }, []);
 
     return (
         <div class="home w-100 my-4  pb-0 " data-aos="flip-down" >

@@ -5,13 +5,13 @@ import CropIcon from '@mui/icons-material/Crop';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import { red } from '@mui/material/colors';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function Services() {
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    }, []);
+    // useEffect(() => {
+    //     AOS.init({ duration: 2000 });
+    // }, []);
     return (
         <div class="services mt-3" data-aos="flip-up">
             <div class="services s2" id="services">

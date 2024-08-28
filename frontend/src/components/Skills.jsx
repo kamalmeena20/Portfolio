@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import 'boxicons'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const data = [
     {
-        name: "html5",
+        name: "html",
         name2: "html5",
         background: "orangered",
         height: 90,
@@ -80,9 +80,9 @@ const data = [
 
 export default function Skill() {
 
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    }, []);
+    // useEffect(() => {
+    //     AOS.init({ duration: 2000 });
+    // }, []);
 
     return (
         <div className='skillpage container-fluid pt-md-5 pt-3 pb-3 mt-5' data-aos="fade-up">

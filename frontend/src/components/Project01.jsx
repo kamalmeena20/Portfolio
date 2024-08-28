@@ -16,8 +16,8 @@ import port01 from '../images/port01.jpg'
 // import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle'
 import Carousel from './Carousel'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 const data = [
     {
         name: "HODO",

@@ -9,8 +9,8 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from 'react-router-dom';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function Contact() {
     const [data, setdata] = useState({ name: "", email: "", mobile: "", message: "" })
@@ -46,9 +46,9 @@ export default function Contact() {
             return { ...pdata, [name]: value }
         })
     }
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    }, []);
+    // useEffect(() => {
+    //     AOS.init({ duration: 2000 });
+    // }, []);
     return (
         <>
             <div class="contact p-0 position-relative " id="contact" data-aos="slide-left">
