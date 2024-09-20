@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 import backgroundimg from '../images/bg-image.jpg'
-import radhe from '../images/myprofile.jpg'
+import radhe from '../images/profilee.jpg'
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import RedditIcon from '@mui/icons-material/Reddit';
