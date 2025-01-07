@@ -34,11 +34,11 @@ const data = [
         link: "http://nutrifit-2lm8.onrender.com"
     },
     {
-        name: "New Project",
-        description: "Coming soon work under process...",
-        images: ["port01.jpg", "port01.jpg", "port01.jpg"],
-        // pending: true,
-        link: "#"
+        name: "SHIVAM-SALON",
+        description: "Shivam Salon offers premium grooming services, haircuts, and rejuvenating treatments. Book appointments easily on our platform.",
+        images: ["shivam01.jpg", "shivam02.jpg", "shivam03.jpg"],
+        // pending: false,
+        link: "https://shivam-salon.onrender.com/"
     }
 ]
 
